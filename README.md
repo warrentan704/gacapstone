@@ -1,13 +1,10 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 📦 Customer Churn Prediction
 
-Description of the app ...
+This is a machine learning app that predicts if customers of a UK supermarket retailer will churn (not make any purchase 30 or more days from last purchase date).
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tescocustomerchurn.streamlit.app/)
 
 ## GitHub Codespaces
 
