@@ -20,7 +20,9 @@ st.set_page_config(
     layout="wide"
 )
 
-st.image("tesco_logo.jpg", width=180)
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image("tesco_logo.jpg", width=180)
 
 st.title("Customer Churn Prediction")
 st.info(
