@@ -20,6 +20,8 @@ st.set_page_config(
     layout="wide"
 )
 
+st.image("tesco_logo.jpg", width=180)
+
 st.title("Customer Churn Prediction")
 st.info(
     "This app estimates whether a TESCO customer is likely to become inactive in the next 30 days "
