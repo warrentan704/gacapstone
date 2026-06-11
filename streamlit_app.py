@@ -20,7 +20,7 @@ st.set_page_config(
     layout="wide"
 )
 
-left_co, cent_co,last_co = st.columns(3)
+left_co, cent_co,last_co = st.columns([1,1,1])
 with cent_co:
     st.image("tesco_logo.png", width=180)
 
