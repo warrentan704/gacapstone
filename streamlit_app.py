@@ -259,6 +259,9 @@ elif page == "Churn Risk Drivers":
 
     drivers = df_churn_drivers.copy()
 
+    # Clean column names in case there are hidden spaces
+    drivers.columns = drivers.columns.str.strip()
+
     drivers["driver"] = drivers["feature"].replace({
         "recency": "Days since last purchase",
         "tenure_days": "Customer tenure",
@@ -268,6 +271,12 @@ elif page == "Churn Risk Drivers":
         "median_basket_quantity": "Typical basket quantity",
         "median_unique_products": "Typical product variety"
     })
+
+    drivers["effect_on_churn"] = drivers["coefficient"].apply(
+        lambda x: "Increases churn risk" if x > 0 else "Decreases churn risk"
+    )
+
+    drivers = drivers.sort_values("abs_coefficient", ascending=False)
 
     st.dataframe(
         drivers[
