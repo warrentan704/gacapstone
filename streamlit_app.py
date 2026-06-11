@@ -291,5 +291,5 @@ elif page == "Churn Risk Drivers":
     )
 
     st.write(
-        "Positive coefficients increase churn risk. Negative coefficients reduce churn risk."
+        "Interpretation: Positive coefficients increase churn risk. Negative coefficients reduce churn risk."
     )
