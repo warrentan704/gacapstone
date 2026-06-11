@@ -22,9 +22,7 @@ st.set_page_config(
 
 st.title('Customer Churn Prediction App')
 
-st.info ('This is a machine learning app that uses logistic regression classification to predict if a supermarket customer will churn')
-
-st.write(
+st.info (
     "This app estimates whether a customer is likely to become inactive in the next 30 days "
     "based on recent shopping behavior."
 )
